@@ -1,7 +1,7 @@
 {
   "name": "yapi-codegen",
   "version": "0.1.0",
-  "description": "application for aomi yapi web turn to .ts or .js api file",
+  "description": "application for yapi web turn to .ts or .js api file",
   "license": "ISC",
   "main": "dist/index.js",
   "bin": {
