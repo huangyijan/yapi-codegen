@@ -22,7 +22,7 @@ export default [
         input: 'src/index.ts',
         output: [
             {
-                file: 'dist/yapi.js',
+                file: 'out/yapi.js',
                 format: 'es',
                 name: 'yapi'
             }

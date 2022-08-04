@@ -7,3 +7,4 @@ api/*
 src/api/*
 out/*
 api.config.json
+yapi.js
