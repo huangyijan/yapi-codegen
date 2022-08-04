@@ -1,9 +1,9 @@
-# aomi-yapi-convert 
+# yapi-codegen 
 
-[![npm version](https://img.shields.io/npm/v/aomi-yapi-convert?style=flat-square)](https://www.npmjs.com/package/aomi-yapi-convert)
-[![npm version](https://img.shields.io/npm/dy/aomi-yapi-convert?style=flat-square)](https://www.npmjs.com/package/aomi-yapi-convert)
+[![npm version](https://img.shields.io/npm/v/yapi-codegen?style=flat-square)](https://www.npmjs.com/package/yapi-codegen)
+[![npm version](https://img.shields.io/npm/dy/yapi-codegen?style=flat-square)](https://www.npmjs.com/package/yapi-codegen)
 
-> 针对yapi文档转js或者ts文件的自动化npm插件
+> yapi文档转js或者ts文件
 
 ## 演示地址
 
@@ -13,7 +13,7 @@
 
 1. 支持转ts、js API文件
 2. js文件支持jsDoc版本和simple注释版本
-3. ts文件支持Ts版本和simple注释版本
+3. ts文件支持Ts版本和simple注释版本（轻注释，无type）
 4. 支持自定义配置生成api文件位置
 5. 支持自定义配置axios路径和axiosName来配置个人封装的请求框架
 6. 支持自定义配置baseUrl,不配置默认取项目的baseUrl(服务端不一定会有)
@@ -35,14 +35,14 @@
 Using npm: 
 
 ```bash
-$ npm install aomi-yapi-convert --save-dev
+$ npm install yapi-codegen --save-dev
 
 ```
 
 Using yarn: 
 
 ```bash
-$ yarn add aomi-yapi-convert -D
+$ yarn add yapi-codegen -D
 
 ```
 
@@ -52,14 +52,14 @@ $ yarn add aomi-yapi-convert -D
 如果不想在package.json里面添加额外的script,可以在终端运行下方命令，会自动触发交互命令行，生成配置文件
 
 ```bash
-$ npx aomi-yapi-convert
+$ npx yapi-codegen
 ```
 
 虽然上面的命令也能满足使用，但是毕竟不方便也不太好记，每次更新都要打一遍，还是推荐在项目package.json添加script:
 
 ```
  "scripts": {
-    "build:api": "aomi-yapi-convert",
+    "build:api": "yapi-codegen",
   },
 ```
 
@@ -79,11 +79,11 @@ $ npx aomi-yapi-convert
 
 * 请输入yapi userId (打开网站network 接口header可看_yapi_uid值)：token和userId对应，否则登录状态将会失效
 
-以添加script为示例，我们看下实际生成的效果
+以添加script为示例，我们看下终端使用例子
 
 ![you need proxy to see the image](./example/yapi-terminal.png)
 
-然后你就会发现在根目录会生成一个api.config.json的配置文件。目前暂时的配置约定是这样的
+然后你就会发现在根目录下会生成一个api.config.json的配置文件。目前暂时的配置约定是这样的
 
 ### Api配置
 
@@ -118,9 +118,13 @@ $ npx aomi-yapi-convert
 
 
 
-好了，走到一步了，如果没有出现意外的话，你会在src/api（如果输出文件路径没有修改的话）目录下看到由插件自动化生成api文件。示例(ts/js)：
+好了，走到一步了，如果没有出现意外的话，你会在src/api（如果输出文件路径没有修改的话）目录下看到由插件自动化生成api文件。示例：
+
+### Typescript
 
 ![you need proxy to see the image](./example/yapi-code-ts.png)
+
+### Javascript
 ![you need proxy to see the image](./example/yapi-code-js.png)
 
 然后就可以愉快使用了。使用的时候将会获得非常良好的提示体验。

@@ -50,7 +50,7 @@ export const getFileJsdocInfo = (item: JsDocMenuItem) => {
     const menuLink = menuItem ? getApiLinkAddress(menuItem.project_id, `cat_${menuItem.catid}`) : ''
     return `/**
  * @description ${item.name}
- * @file 该文件由aomi-yapi-convert自动生成，请不要手动改动这个文件, 可能会被插件更新覆盖
+ * @file 该文件由yapi-codegen自动生成，请不要手动改动这个文件, 可能会被插件更新覆盖
  * @docUpdateTime ${new Date().toLocaleDateString()}
  * @link ${menuLink}
  */`

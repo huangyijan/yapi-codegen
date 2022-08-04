@@ -13,9 +13,9 @@ export const USER_ID = 'YAPI_USER_ID'
 export const NameRegex = /[-|_]([a-zA-Z])/g // 重命名捕获替换字符串
 export const quotaRegex = /(,)\s*\n*.*\}/g // 匹配json字符串最后一个逗号
 export const illegalJsonRegex = /(\/\/\s.*)\n/g // 非法json注释匹配
-export const axiosType = 'import type { AxiosRequestConfig } from \'aomi-yapi-convert\''
+export const axiosType = 'import type { AxiosRequestConfig } from \'yapi-codegen\''
 export const jsdocAxiosType = `/**
-  * @typedef { import("aomi-yapi-convert").AxiosRequestConfig } AxiosRequestConfig
+  * @typedef { import("yapi-codegen").AxiosRequestConfig } AxiosRequestConfig
   */`
 
 export const enum Version {
