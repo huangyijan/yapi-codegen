@@ -5,22 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
-      "request": "launch",
-      "name": "常规调试",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/out/test/mock.js",
-      "outFiles": [
-        "${workspaceFolder}/out/**/*.js"
-      ],
-      "env": {
-        "NODE_ENV": "development" // 配置方便调试
-      }
-    },
-    {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
       "name": "inquire调试",
       "skipFiles": [

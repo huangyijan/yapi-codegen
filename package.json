@@ -1,11 +1,11 @@
 {
-  "name": "aomi-yapi-convert",
-  "version": "1.0.9",
-  "description": "application for aomi yapi web turn to .ts or .js api file",
+  "name": "yapi-codegen",
+  "version": "0.1.0",
+  "description": "application for yapi web turn to .ts or .js api file",
   "license": "ISC",
   "main": "dist/index.js",
   "bin": {
-    "aomi-yapi-convert": "./dist/update.js"
+    "yapi-codegen": "./dist/update.js"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -23,9 +23,9 @@
     "test": "jest --watch",
     "build:api": "node out/enter/index.js",
     "build": "rollup -c",
-    "lint": "eslint --ext .ts src/ --fix"
+    "lint": "eslint --ext .ts ./ --fix"
   },
-  "repository": "https://github.com/huangyijan/aomi-yapi-convert",
+  "repository": "https://github.com/huangyijan/yapi-codegen",
   "author": "yijian",
   "devDependencies": {
     "@types/inquirer": "^8.2.1",
@@ -40,6 +40,7 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "inquirer": "^8.2.2"
+    "inquirer": "^8.2.2",
+    "prettier": "^2.7.1"
   }
 }
