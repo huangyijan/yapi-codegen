@@ -4,6 +4,14 @@
   "description": "application for yapi web turn to .ts or .js api file",
   "license": "ISC",
   "main": "dist/index.js",
+  "keywords": [
+    "yapi",
+    "codegen",
+    "generate",
+    "jsdoc",
+    "type",
+    "interface"
+  ],
   "bin": {
     "yapi-codegen": "./dist/update.js"
   },
