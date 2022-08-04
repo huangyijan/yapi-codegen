@@ -14,21 +14,6 @@ export const hasProperty = function (obj: object, key: string) {
 }
 
 
-/** 判断api数据里面的数据类型 */
-export const getTypeByValue = (value: any) => {
-    if (value === null) return 'string' 
-    const jsType = typeof value
-    switch (jsType) {
-        case 'object': // 引用类型都是object，需要处理不同引用类型
-            return value.constructor === Array ? 'array' : 'object'
-        case 'undefined': 
-            return 'any'
-        default:
-            return jsType
-    }
-}
-
-
 /** 获取请求体（body）传输参数 */
 export const getLegalJson = (reqBody: string) => {
     if (!reqBody|| reqBody.length<20) return ''

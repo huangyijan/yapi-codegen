@@ -1,4 +1,3 @@
-import { getTypeByValue } from '.'
 import { getApiName, getUpperCaseName } from './str-operate'
 
 /** 获取传参名称, TODO，移除params和data,所有的地方都需要额外做处理 */
@@ -14,15 +13,6 @@ export const getNoteNameByParamsType = (item: JsDocApiItem, suffix: string) => {
 export const getReturnType = (returnName: string | undefined, resType: string | undefined) => {
     if (!returnName || !resType) return 'any'
     if (returnName === 'array') return '[]'
-    return returnName
-}
-
-/** 获取返回的参数名 */
-export const getReturnName = (requestName: string, value: any) => {
-    const returnName = requestName + 'Response'
-    const type = getTypeByValue(value)
-    if (type === 'string' || type === 'array') return type // 如果是字符串或者数组，直接返回类型作为类型名
-
     return returnName
 }
 

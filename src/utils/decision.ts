@@ -1,4 +1,4 @@
-import { hasProperty, getTypeByValue } from '.'
+import { hasProperty } from '.'
 import { NormalType, prettierDefaultOption, Version, Versions } from './constants'
 import prettier from 'prettier'
 import { getUpperCaseName } from './str-operate'
@@ -24,7 +24,6 @@ export const getSuitableType = (value: any) => {
         case 'object':
             if (value === null) return 'any'
             if (hasProperty(value, 'type')) return transformType(value.type)
-            if (hasProperty(value, 'default')) return getTypeByValue(value.default)
             return valueType
         case 'undefined':
             return 'any'

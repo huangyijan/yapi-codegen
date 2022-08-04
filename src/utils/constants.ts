@@ -44,7 +44,7 @@ export const enum OutputStyle {
 export const baseConfig = {
     isNeedType: true,
     isNeedAxiosType: true,
-    isNeedSecondType: true,
+    isNeedSecondType: false,
     outputStyle: OutputStyle.Default,
     axiosFrom: 'import fetch from \'axios\'',
     axiosName: 'fetch'

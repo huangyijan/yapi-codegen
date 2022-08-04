@@ -1,4 +1,4 @@
-import { hasProperty, toHumpName, getTypeByValue } from '../src/utils'
+import { hasProperty, toHumpName } from '../src/utils'
  
 describe('utils index', () => {
     test('hasProperty',  () => { 
@@ -19,20 +19,6 @@ describe('utils index', () => {
         expect(toHumpName(testName3)).toBe('YouAreGood_')
     })
 
-    test('getTypeByValue', () => {
-        const value1 = 1
-        const value2 = '1'
-        const value3 = true
-        const value4 = [1, 3]
-        const value5 = { type: 'string' }
-        const value6 = { name: 'yijian' }
-        expect(getTypeByValue(value1)).toBe('number')
-        expect(getTypeByValue(value2)).toBe('string')
-        expect(getTypeByValue(value3)).toBe('boolean')
-        expect(getTypeByValue(value4)).toBe('array')
-        expect(getTypeByValue(value5)).toBe('object')
-        expect(getTypeByValue(value6)).toBe('object')
-    })
 
 })
 
