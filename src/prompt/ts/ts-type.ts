@@ -2,8 +2,8 @@
 import { getUpdateTime, getApiLinkAddress, getAxiosOptionTypeName, getNoteNameByParamsType } from '../../utils/note'
 import { getMainRequestMethodStr, getCustomerParamsStr } from '../../utils/str-operate'
 import { ApiItem } from '../../utils/model'
-import { dealJsonToTsTypeReturn, getConfigNoteParams, getConfigNoteData, getTypeName } from '.'
-import { getLegalJson } from '../../utils'
+import { dealJsonToTsTypeReturn, getConfigNoteParams, getConfigNoteData } from '.'
+import { getLegalJson, getTypeName } from '../../utils'
 
 
 export class TsApiItem extends ApiItem {

@@ -3,8 +3,7 @@ import { dealJsonToJsDocReturn, getConfigNoteParams, getJsonToJsDocParams } from
 import { getUpdateTime, getApiLinkAddress, getReturnType, getNoteNameByParamsType, getAxiosOptionTypeName } from '../../utils/note'
 import { getCustomerParamsStr, getMainRequestMethodStr } from '../../utils/str-operate'
 import { ApiItem } from '../../utils/model'
-import { getLegalJson } from '../../utils'
-import { getTypeName } from '../ts'
+import { getLegalJson, getTypeName } from '../../utils'
 export class JsApiItem extends ApiItem {
 
     constructor(apiItem: JsDocApiItem, project: ProjectConfig) {
