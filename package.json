@@ -19,7 +19,7 @@
   },
   "types": "./typings/index.d.ts",
   "scripts": {
-    "dev": "rollup",
+    "dev": "rollup -c -w",
     "test": "jest --watch",
     "build:api": "node out/enter/index.js",
     "build": "rollup -c",

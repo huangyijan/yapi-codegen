@@ -22,16 +22,15 @@ export default [
         input: 'src/web/index.ts',
         output: [
             {
-                file: 'dist/aomi-yapi.js',
-                format: 'es',
-                name: 'aomi-yapi'
+                file: 'dist/yapi-sdk.min.js',
+                format: 'umd',
+                name: 'YapiSDK'
             }
         ],
         plugins: [
             typescript({
                 tsconfigOverride: override
             }),
-
         ]
     },
     {

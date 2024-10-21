@@ -1,0 +1,88 @@
+.main-row {
+    width: 100vw;
+    height: calc(100vh - 60px);
+  
+    .config-form {
+      padding: 10px 0;
+      height: 100%;
+      overflow: auto;
+  
+      .group-tag {
+        margin-right: 10px;
+      }
+  
+      .add-project {
+        width: 100%;
+        margin-top: 16px;
+      }
+  
+      .menu-checkbox {
+        width: 150px;
+      }
+    }
+  
+  
+    .code-wrap {
+      padding: 10px;
+      height: 100%;
+      overflow: auto;
+  
+      .title-collapse {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+  
+        div:nth-child(1) {
+          display: flex;
+          align-items: center;
+        }
+  
+        .edit-icon {
+          margin-right: 10px;
+        }
+      }
+  
+      .code-collapse {
+        width: 95%;
+      }
+    }
+  }
+
+  @keyframes rightMove {
+    0% {
+        left: -15px;
+      }
+    
+      100% {
+        left: 15px;
+        color: #000;
+      }
+  }
+  
+  .arrow-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  
+    .arrow-right {
+      margin: 10px 0;
+      color: #ccc;
+      animation: rightMove 2s ease infinite;
+    }
+  }
+
+  .edit-container {
+    .code-read {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+    }
+      .edit-wrap {
+        width: 100%;
+        min-height: 800px;
+      }
+  }
