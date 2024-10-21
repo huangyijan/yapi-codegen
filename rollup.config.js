@@ -22,16 +22,15 @@ export default [
         input: 'src/index.ts',
         output: [
             {
-                file: 'out/yapi.js',
-                format: 'es',
-                name: 'yapi'
+                file: 'dist/yapi-sdk.min.js',
+                format: 'umd',
+                name: 'YapiSDK'
             }
         ],
         plugins: [
             typescript({
                 tsconfigOverride: override
             }),
-
         ]
     },
     {
