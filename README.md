@@ -8,6 +8,7 @@
 ## 演示地址
 
 功能体验地址: [https://huangyijan.github.io/yapi/](https://huangyijan.github.io/yapi/)
+chrome插件地址：[https://github.com/huangyijan/copy-yapi](https://github.com/huangyijan/copy-yapi)
 
 ## 功能
 
